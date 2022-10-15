@@ -3,10 +3,8 @@ package com.driver;
 public class Main {
     public  static  void main(String[] args){
         B obj = new B();
-       String ans =  obj.meth();
-       System.out.println(ans);
-       A obj1 = new B();
-       System.out.println(obj1.meth());
+
+       System.out.println(obj.meth());
     }
 
 }
@@ -18,7 +16,8 @@ class A{
 }
 class B extends  A{
     public String meth(){
-
+        System.out.println(super.meth());
         return "Method is overridden in Extendend class B";
+
     }
 }
